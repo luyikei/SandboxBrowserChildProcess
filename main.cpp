@@ -17,9 +17,6 @@ int main(int argc, char *argv[])
     embed -> setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     SBChildWidget w;
-    w.setFocus();
-    w.activateWindow();
-    w.raise();
 
     layout -> addWidget(&w);
     embed -> setLayout(layout);
