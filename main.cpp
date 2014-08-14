@@ -13,7 +13,6 @@ int main(int argc, char *argv[])
     QVBoxLayout* layout = new QVBoxLayout;
 
     QX11EmbedWidget *embed = new QX11EmbedWidget;
-    embed -> setMinimumSize(500,500);
     embed -> setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     SBChildWidget w;

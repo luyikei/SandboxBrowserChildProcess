@@ -17,7 +17,8 @@ public:
     ~SBChildWidget();
 
 private slots:
-    void on_lineEdit_returnPressed();
+    void on_urlsEdit_returnPressed();
+
 
 private:
     Ui::SBChildWidget *ui;
