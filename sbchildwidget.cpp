@@ -41,7 +41,7 @@ SBChildWidget::SBChildWidget(QWidget *parent) :
     {
 //        struct rlimit nofile;
 //        nofile.rlim_cur = 0;nofile.rlim_max=0;
-//        setrlimit(RLIMIT_NOFILE, &nofile);
+//        setrlimit(RLIMIT_FSIZE, &nofile);
     }
 
     // setguid
