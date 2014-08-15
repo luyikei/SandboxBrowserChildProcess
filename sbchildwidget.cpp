@@ -23,19 +23,19 @@ SBChildWidget::SBChildWidget(QWidget *parent) :
     ui->setupUi(this);
 
     // seccomp
-    {
-        scmp_filter_ctx ctx;
-        ctx = seccomp_init(SCMP_ACT_ALLOW);
+//    {
+//        scmp_filter_ctx ctx;
+//        ctx = seccomp_init(SCMP_ACT_ALLOW);
 
-        seccomp_rule_add(ctx, SCMP_ACT_KILL, SCMP_SYS(fork), 0);
-    //    seccomp_rule_add(ctx, SCMP_ACT_KILL, SCMP_SYS(write), 0);
+//        seccomp_rule_add(ctx, SCMP_ACT_KILL, SCMP_SYS(fork), 0);
+//        seccomp_rule_add(ctx, SCMP_ACT_KILL, SCMP_SYS(write), 0);
 
-        prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0);
+//        prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0);
 
-        seccomp_load(ctx);
-        seccomp_release(ctx);
+//        seccomp_load(ctx);
+//        seccomp_release(ctx);
 
-    }
+//    }
 
     // rlimit
     {
