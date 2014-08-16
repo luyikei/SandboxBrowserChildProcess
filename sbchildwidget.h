@@ -19,7 +19,6 @@ public:
 private slots:
     void on_urlsEdit_returnPressed();
 
-
 private:
     Ui::SBChildWidget *ui;
 };

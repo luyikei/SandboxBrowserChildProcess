@@ -10,6 +10,8 @@
 
 #include <QKeyEvent>
 #include <QMessageBox>
+#include <QDebug>
+
 #include <pwd.h>
 #include <grp.h>
 
@@ -60,12 +62,7 @@ SBChildWidget::SBChildWidget(QWidget *parent) :
 //        chroot("/tmp");
 //        chdir ("/");
     }
-    raise();
-    activateWindow();
-    setFocus();
-
-    QCoreApplication::postEvent(ui->urlEdit,
-                                new QFocusEvent(QEvent::FocusIn, Qt::OtherFocusReason));
+    qApp->setActiveWindow(this);
 
 }
 
